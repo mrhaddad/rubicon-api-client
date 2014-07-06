@@ -23,7 +23,6 @@ module RubiconApiClient
     end
 
     def execute(path)
-      puts path
       uri = URI.parse @@host
       net = Net::HTTP.new uri.host
       req = Net::HTTP::Get.new path
